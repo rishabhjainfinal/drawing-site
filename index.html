@@ -32,97 +32,97 @@
             <!-- everytime_new_pic_just_add_in_this_format_and_increase_id_by_1 -->
 
             <!-- <div class="images imagebox">
-                <img src="photos&profile/" alt="photo" onclick=fun(this.id) class="images" id="image$">
+                <img data-src="photos&profile/" alt="photo" onclick=fun(this.id) class="images" id="image$">
                 <h3 class="description">
                     discription
                 </h3>
             </div> -->
             <div class="images imagebox">
-                <img src="photos&profile/lovers hand creativity.jpg" alt="photo" onclick=fun(this.id) class="images" id="image13">
+                <img data-src="photos&profile/lovers hand creativity.jpg" alt="photo" onclick=fun(this.id) class="images" id="image13">
                 <h3 class="description">
                     Lovers Hand With Creativity
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/lovers hand.jpg" alt="photo" onclick=fun(this.id) class="images" id="image12">
+                <img data-src="photos&profile/lovers hand.jpg" alt="photo" onclick=fun(this.id) class="images" id="image12">
                 <h3 class="description">
                     Lovers Hands
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/eye.jpg" alt="photo" onclick=fun(this.id) class="images" id="image11">
+                <img data-src="photos&profile/eye.jpg" alt="photo" onclick=fun(this.id) class="images" id="image11">
                 <h3 class="description">
                     An beautyful eye
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/rain.jpg" alt="photo" onclick=fun(this.id) class="images" id="image10">
+                <img data-src="photos&profile/rain.jpg" alt="photo" onclick=fun(this.id) class="images" id="image10">
                 <h3 class="description">
                     Rain from glass window
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/face.jpg" alt="photo" onclick=fun(this.id) class="images" id="image9">
+                <img data-src="photos&profile/face.jpg" alt="photo" onclick=fun(this.id) class="images" id="image9">
                 <h3 class="description">
                     Girl's Face
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/drops.jpg" alt="photo" onclick=fun(this.id) class="images" id="image8">
+                <img data-src="photos&profile/drops.jpg" alt="photo" onclick=fun(this.id) class="images" id="image8">
                 <h3 class="description">
                     Water drops
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/steal.jpg" alt="photo" onclick=fun(this.id) class="images" id="image7">
+                <img data-src="photos&profile/steal.jpg" alt="photo" onclick=fun(this.id) class="images" id="image7">
                 <h3 class="description">
                     Pain of Robber
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/tree.jpg" alt="photo" onclick=fun(this.id) class="images" id="image6">
+                <img data-src="photos&profile/tree.jpg" alt="photo" onclick=fun(this.id) class="images" id="image6">
                 <h3 class="description">
                     Hyper-realitic tree
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/plane.jpg" alt="photo" onclick=fun(this.id) class="images" id="image5">
+                <img data-src="photos&profile/plane.jpg" alt="photo" onclick=fun(this.id) class="images" id="image5">
                 <h3 class="description">
                     Big Dream
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/tree_shore.jpg" alt="photo" onclick=fun(this.id) class="images" id="image4">
+                <img data-src="photos&profile/tree_shore.jpg" alt="photo" onclick=fun(this.id) class="images" id="image4">
                 <h3 class="description">
                     Cliff View
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/dori.jpg" alt="photo" onclick=fun(this.id) class="images" id="image3">
+                <img data-src="photos&profile/dori.jpg" alt="photo" onclick=fun(this.id) class="images" id="image3">
                 <h3 class="description">
                     Doraemon
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/tree in leaf.jpg" alt="photo" onclick=fun(this.id) class="images" id="image2">
+                <img data-src="photos&profile/tree in leaf.jpg" alt="photo" onclick=fun(this.id) class="images" id="image2">
                 <h3 class="description">
                     Trees In Leaf
                 </h3>
             </div>
 
             <div class="images imagebox">
-                <img src="photos&profile/sad face.jpg" alt="photo" onclick=fun(this.id) class="images" id="image1">
+                <img data-src="photos&profile/sad face.jpg" alt="photo" onclick=fun(this.id) class="images" id="image1">
                 <h3 class="description">
                     Sad Face
                 </h3>
@@ -194,6 +194,18 @@
     </div>
     <!-- socialmedia/contactme ends-->
     <script src="draw.js"></script>
+    <script>
+        function init() {
+            var imgDefer = document.getElementsByTagName('img');
+            for (var i = 0; i < imgDefer.length; i++) {
+                if (imgDefer[i].getAttribute('data-src')) {
+                    imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+                }
+            }
+        }
+
+        window.onload = init;
+    </script>
 </body>
 
 </html>
