@@ -131,6 +131,11 @@ nav div.profile h4:hover {
 
 /* SECTION_CSS */
 
+section {
+    margin: auto;
+    max-width: 1500px;
+}
+
 section h1 {
     text-align: center;
     font-size: 3.5em;
@@ -1020,4 +1025,35 @@ footer {
     .social_media .plateform div.icon a {
         color: white;
     }
+}
+
+#aboutMe {
+    text-align: center;
+    font-size: 8em;
+    line-height: 1em;
+    color: white;
+    text-decoration: underline;
+    text-shadow: 2px 2px 20px black;
+    font-weight: 800;
+    font-family: 'Gochi Hand', cursive;
+}
+
+section.aboutMe {
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 12px 15px 20px 2px black;
+    min-height: 80vh;
+    padding: 1.3em;
+    margin: .7em;
+    color: black;
+    background-color: white;
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
+footer.footer.base {
+    margin: 0;
+    padding: 0;
+    font-size: 3.5em;
+    font-weight: 800;
 }
