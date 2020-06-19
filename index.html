@@ -2,20 +2,9 @@
 <html lang="en">
 
 <head>
-    <script data-ad-client="ca-pub-6733400755587030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169683489-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-169683489-1');
-</script>
-
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Drawing which can change your Thinking prospective ,simple Drawings to make in Isolation " />
     <title>Rishi's Drawings</title>
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Catamaran:wght@500&family=Gochi+Hand&family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -31,8 +20,8 @@
             <h4>Rishabh Jain</h4>
         </div>
         <div class="info">
-            <!-- <li class="infomation"><a class="home">Home</a></li> -->
-            <li class="infomation"><a class="socialmedialink">Social Media</a></li>
+            <li class="infomation"><a href="/">Home</a></li>
+            <li class="infomation"><a href="#aboutMe">About Me</a></li>
             <li class="infomation"><a href="form.html">Login</a></li>
             <li class="infomation"><a class="socialmedialink">Contact Me</a></li>
         </div>
@@ -40,6 +29,16 @@
     <section class="cointainer" id="photos">
         <h1 class="heading center bolt" id='head'><a href="#head" style="text-decoration:none ;
             color: white;">Drawings</a></h1>
+        <p class="paraUnderDrwaingText" style="color: white;
+        margin: auto;
+        font-size: 3.5em;
+        text-shadow: 3px 4px 3px black;
+        text-transform: uppercase;
+        text-align: center;
+    ">
+            All the drawings are display below are sorted according to their likes
+        </p>
+
         <div class="item photos">
             <!-- everytime_new_pic_just_add_in_this_format_and_increase_id_by_1 -->
 
@@ -66,7 +65,7 @@
             <div class="images imagebox">
                 <img data-src="photos&profile/eye.jpg" alt="photo" onclick=fun(this.id) class="images" id="image11">
                 <h3 class="description">
-                    A Beautiful Eye
+                    An beautyful eye
                 </h3>
             </div>
 
@@ -157,12 +156,30 @@
         <!-- fullscreen_end -->
 
     </section>
+    <h1 class="aboutmeHead" id="aboutMe"> ABOUT ME</h1>
+    <section class="aboutMe">
+        <img src="photos&profile/pro.png" alt="profile_of_owner" style='float: left;
+        margin: 10px;width:40vw;border-radius:20px'> Name:Rishabh Jain<br> Age : 17<br> skills: Python Programing ,Pencil Drawings, Web Developer<br><br> So here is discription of site and me <br><br> The Aim of this site is to provide really
+        simple drawings to the new artists<br><br> I am basically a python programer make selenium automation bots for different social media sites you can check my github for more info;
+        <br><br> This is my new skill of Web Development <br> So I thought why wouldn't I combine all of them <br>
+        <h3 style='text-transform: uppercase;'>for any more info you can dm on Insta linkn in contact me </h3>
+        This site is under process so will see updates for some time <br>
+        <br> here is some data from internet
+        <br>I am a kind hearted person and quite sympathetic and sensitive. I never lose an opportunity to help my friends or anyone else. I face all situations bravely and boldly. I am optimistic and ready for any adventurous task. I performed well as
+        a student through my academics
+
+    </section>
     <footer class="footer base">
         &copy;copiright reserved Developed by Rishabh Jain
     </footer>
 
     <!-- socialmedia/contactme -->
     <div class="social_media coverscreen" id="social">
+        <h1 class="socialHead" style=" color: white; 
+        font-size: 4em;
+        align-items:center;">
+            Here is list all social media on which I am always active
+        </h1>
         <span id="close" class="socialclose"> &times; </span>
         <div id='instagram' class="plateform">
             <div class="link">
@@ -190,34 +207,13 @@
                 </a>
             </div>
         </div>
-        <div id='twitter' class="plateform">
-            <div class="link">
-                <a href="https://twitter.com/explore" target="_blank">
-                    Twitter
-                    <br>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="https://twitter.com/explore" target="_blank">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </div>
-        </div>
+
+    </div>
     </div>
     <!-- socialmedia/contactme ends-->
-    <script src="draw.js"></script>
-    <script>
-        function init() {
-            var imgDefer = document.getElementsByTagName('img');
-            for (var i = 0; i < imgDefer.length; i++) {
-                if (imgDefer[i].getAttribute('data-src')) {
-                    imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
-                }
-            }
-        }
 
-        window.onload = init;
-    </script>
+
+    <script src="draw.js"></script>
 </body>
 
 </html>

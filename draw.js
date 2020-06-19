@@ -9,7 +9,6 @@ let discription = document.getElementById("discription")
 let closed = document.getElementsByClassName('socialclose')[0]
 let socialbox = document.getElementById("social")
 let social = document.getElementsByClassName("socialmedialink")[0]
-let contact = document.getElementsByClassName("socialmedialink")[1]
 let home = document.getElementsByClassName("home")[0]
 
 clo.onclick = function() {
@@ -46,13 +45,19 @@ function fun(tag_id) {
 social.onclick = function() {
     socialbox.style.display = 'flex';
 }
-contact.onclick = function() {
-    socialbox.style.display = 'flex';
-}
+
 closed.onclick = function() {
     socialbox.style.display = 'none';
 }
 
-// home.onclick = function() {
-//     alert("currently not linked")
-// }
+
+function init() {
+    var imgDefer = document.getElementsByTagName('img');
+    for (var i = 0; i < imgDefer.length; i++) {
+        if (imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+        }
+    }
+}
+
+window.onload = init;
